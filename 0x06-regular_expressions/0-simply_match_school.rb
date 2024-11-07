@@ -1,2 +1,9 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/school/).join
+
+
+input = ARGV[0]
+
+
+if input
+  puts input.scan(/School/).join
+end

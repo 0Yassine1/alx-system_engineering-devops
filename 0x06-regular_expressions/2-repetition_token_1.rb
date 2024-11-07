@@ -1,2 +1,9 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/hb?t?n/).join
+
+# Accept input from the command line argument
+input = ARGV[0]
+
+# Use a regular expression to match "hbtn" where "b" is optional
+if input
+  puts input.scan(/hb{0,1}tn/).join
+end
